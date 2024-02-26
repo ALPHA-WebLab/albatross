@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/* Общие стили */
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #dbdbdb;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+                /* Шапка */
+
+.header {
+    background: #000520;
+    color: #ffffff;
+    padding: 50px 65px 67px 65px;
+}
+
+                /* Шапка - верх */
+
+.top {
+    display: flex;
+}
+
+.top_logo {
+    width: 10%;
+}
+
+.top_name {
+    width: 40%;
+}
+
+.top_name h1 {
+    margin: 3px 0 0 0;
+    font-size: 27px;
+    font-weight: 600;
+    color: #c1d2ff;
+}
+
+.top_name p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.top_link {
+    width: 50%;
+    padding-top: 10px;
+}
+
+.top_link_text {
+    float: right;
+    text-decoration: none;
+    background: #4F80F8;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.top_link_text:hover {
+    opacity: 0.8;
+}
+
+                /* Шапка - популярные товары */
+
+.popular {
+    display: flex;
+}
+
+.popular_text {
+    width: 45%;
+    font-family: Roboto, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    text-transform:uppercase;
+    color: #d1d1d1;
+}
+
+.popular_text span {
+    float: right;
+}
+
+.popular_img {
+    width: 55%;
+}
+
+.best_1 img,
+.best_2 img,
+.best_3 img {
+display: block;
+}
+
+.best_1 a,
+.best_2 a,
+.best_3 a {
+    display: block;
+    color: #7cffff;
+    text-decoration: none;;
+}
+
+.best_1 {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.best_2 {
+    margin-left: 240px;
+    margin-top: -150px;
+}
+
+.best_3 {
+    margin-left: 430px;
+    margin-top: -160px;
+}
+
+                /* Приветствие */
+
+.greetings {
+    background: #ffffff;
+    padding: 100px 65px 80px 65px;
+    position: relative;
+}
+
+.greetings h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #4F80F8;
+    margin-left: 490px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.greetings_text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+    margin-left: 490px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+.question {
+    width: 215px;
+    background: #4F80F8;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 130px;
+    left: 160px;
+}
+
+.question_top_text {
+    display: inline;
+    text-transform:uppercase;
+    color: #ffffff;
+    margin-right: 40px;
+}
+
+.question_bottom {
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+                /* Каталог товаров */
+
+.goods {
+    display: flex;
+}
+
+.goods_left {
+    width: 75%;
+    background: #ededed;
+    display: flex;
+}
+
+.goods_left_img {
+    display: block;
+}
+
+.goods_left ol li {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #686868;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 35px;
+}
+
+.goods_right {
+    width: 25%;
+    background: #000520;
+    padding: 40px;
+}
+
+.goods_right_top_text {
+    display: inline;
+    text-transform:uppercase;
+    color: #A0BCFF;
+    margin-left: 40px;
+}
+
+.goods_right_bottom {
+    margin: 170px 0 0 0;
+    color: #ffffff;
+    font-size: 22px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+                /* Инструкции на русском языке */
+
+.manuals {
+    background: #ffffff;
+    padding: 100px 65px 100px 65px;
+    display: flex;
+}
+
+.manual_left {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.manual_left_text {
+    margin: 0;
+    display: inline;
+    font-family: Roboto, sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    color: #4F80F8;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.manual_left_img {
+    display: block;
+    position: absolute;
+    left: -65px;
+    top: -100px;
+    opacity: 0.3;
+}
+
+.manual_right {
+    width: 50%;
+}
+
+.manual_right td:nth-child(even) {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #4F80F8;
+}
+
+.manual_right tr th {
+    padding-bottom: 20px;
+}
+
+.manual_right tr:nth-child(odd) {
+    background: #eee;
+}
+
+                /* Форма обратной связи */
+
+.feedback {
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    background: #ededed;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.feedback_left {
+    width: 35%;
+    background: #4F80F8;
+    display: block;
+}
+
+.form_text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #4F80F8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form_top {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form_top .form_group {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form_group label {
+    display: block;
+    font-size: 16px;
+    color: #959595;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #cccccc;
+    color: #000000;
+    padding: 15px 0 10px;
+    margin-bottom: 30px;
+    outline: none;
+    font-family: inherit;
+}
+
+::placeholder {
+    opacity: 0.4;
+}
+
+.form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background: #4F80F8;
+    border: none;
+    padding: 0.6em 80px;
+    font: 1.5em 'Open Sans', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+                /* Подвал */
+
+.footer {
+    width: 100%;
+    background: #000520;
+}
+
+.footer_text {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #d1d1d1;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+                /* Медиа-запросы */
+
+@media (max-width: 1100px) {
+    .best_1 img,
+    .best_2 img,
+    .best_3 img {
+        display: none;
+    }
+
+    .best_1 {
+        margin-top: 110px;
+        margin-left: 50px;
+    }
+
+    .best_2 {
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .best_3 {
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .popular_text {
+        width: 50%;
+        font-size: 52px;
+    }
+
+    .popular_img {
+        width: 50%;
+    }
+
+    .greetings h3 {
+        font-size: 42px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .goods {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .goods_left {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .goods_right {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .goods_left ol li {
+        font-size: 18px;
+    }
+
+    .manuals {
+        display: block;
+    }
+
+    .manual_left {
+        width: 100%;
+        position: static;
+    }
+
+    .manual_left_img {
+        display: none;
+        position: static;
+    }
+
+    .manual_left_text {
+        width: 100%;
+        display: block;
+        font-size: 42px;
+        text-align: center;
+        position: static;
+    }
+
+    .manual_right {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .feedback_left {
+        display: none;
+    }
+
+    .form_text {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 860px) {
+    .top {
+        display: block;
+        text-align: center;
+    }
+
+    .top_logo,
+    .top_name,
+    .top_link
+     {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .top_link a {
+        float: none;
+    }
+
+    .popular {
+        display: block;
+    }
+
+    .popular_text {
+        width: 100%;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .popular_img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .popular_text span {
+        float: none;
+    }
+
+    .best_1,
+    .best_2,
+    .best_3 {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .greetings {
+        background: #ffffff;
+        padding: 100px 65px 80px 65px;
+        position: static;
+    }
+
+    .greetings h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 42px;
+        margin-left: 0px;
+    }
+
+    .greetings_text {
+        width: 70%;
+        margin-left: 0px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .question {
+        width: 215px;
+        margin: 0 auto;
+        background: #4F80F8;
+        padding: 10px 20px;
+        position: static;
+    }
+}
